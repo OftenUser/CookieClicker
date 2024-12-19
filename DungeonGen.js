@@ -1,30 +1,29 @@
 /*
 Orteil's crappy dungeon generation library, 2013
 Unfinished and buggy, use at your own risk (please credit)
-http://orteil.dashnet.org
+https://orteil.dashnet.org
 
-Rough process (might or might not be what actually happens) :
-1 make a room in the middle
-2 pick one of its walls (not corners)
-3 select a free tile on the other side of that wall
-4 iteratively expand the selection in one (corridors) or two (rooms) directions, stopping when we meet a wall or when we're above the size threshold
-5 compute that selection into a room
-6 add decorations to the room (pillars, water) but only on the center tiles, as to leave free passages (sprinkle destructible decorations anywhere)
-7 take a random floor tile in the room and repeat step 4, but don't stop at the walls of this room (this creates branching) - repeat about 5 times for interesting shapes
-8 add those branches to the room
-9 carve the room into the map, and set the initially selected wall as a door - set the new room's parent to the previous room, and add it to its parent's children
-10 repeat step 2 with any free wall on the map until the amount of tiles dug is above the desired fill ratio
+Rough Process (Might or might not be what actually happens):
+1. Make a room in the middle
+2. Pick one of its walls (Not corners)
+3. Select a free tile on the other side of that wall
+4. Iteratively expand the selection in 1 (Corridors) or 2 (Rooms) directions, stopping when we meet a wall or when we're above the size threshold
+5. Compute that selection into a room
+6. Add decorations to the room (pillars, water) but only on the center tiles, as to leave free passages (Sprinkle destructible decorations anywhere)
+7. Take a random floor tile in the room and repeat Step 4, but don't stop at the walls of this room (This creates branching) - Repeat about 5 times for interesting shapes
+8. Add those branches to the room
+9. Carve the room into the map, and set the initially selected wall as a door - Set the new room's parent to the previous room, and add it to its parent's children
+10. Repeat Step 2 with any free wall on the map until the amount of tiles dug is above the desired fill ratio
 
-Note : I should probably switch the rendering to canvas to allow stuff like occlusion shadows and lights
+NOTE: I should probably switch the rendering to canvas to allow stuff like occlusion shadows and lights
 */
 
-if (1==1 || undefined==Math.seedrandom)
-{
-	//seeded random function, courtesy of http://davidbau.com/archives/2010/01/30/random_seeds_coded_hints_and_quintillions.html
+if (1 == 1 || undefined == Math.seedrandom) {
+	// Seeded random function, courtesy of https://davidbau.com/archives/2010/01/30/random_seeds_coded_hints_and_quintillions.html
 	(function(a,b,c,d,e,f){function k(a){var b,c=a.length,e=this,f=0,g=e.i=e.j=0,h=e.S=[];for(c||(a=[c++]);d>f;)h[f]=f++;for(f=0;d>f;f++)h[f]=h[g=j&g+a[f%c]+(b=h[f])],h[g]=b;(e.g=function(a){for(var b,c=0,f=e.i,g=e.j,h=e.S;a--;)b=h[f=j&f+1],c=c*d+h[j&(h[f]=h[g=j&g+b])+(h[g]=b)];return e.i=f,e.j=g,c})(d)}function l(a,b){var e,c=[],d=(typeof a)[0];if(b&&"o"==d)for(e in a)try{c.push(l(a[e],b-1))}catch(f){}return c.length?c:"s"==d?a:a+"\0"}function m(a,b){for(var d,c=a+"",e=0;c.length>e;)b[j&e]=j&(d^=19*b[j&e])+c.charCodeAt(e++);return o(b)}function n(c){try{return a.crypto.getRandomValues(c=new Uint8Array(d)),o(c)}catch(e){return[+new Date,a,a.navigator.plugins,a.screen,o(b)]}}function o(a){return String.fromCharCode.apply(0,a)}var g=c.pow(d,e),h=c.pow(2,f),i=2*h,j=d-1;c.seedrandom=function(a,f){var j=[],p=m(l(f?[a,o(b)]:0 in arguments?a:n(),3),j),q=new k(j);return m(o(q.S),b),c.random=function(){for(var a=q.g(e),b=g,c=0;h>a;)a=(a+c)*d,b*=d,c=q.g(1);for(;a>=i;)a/=2,b/=2,c>>>=1;return(a+c)/b},p},m(c.random(),b)})(this,[],Math,256,6,52);
 }
 
-if (1==1 || undefined==choose) {function choose(arr) {if (arr.length==0) return 0; else return arr[Math.floor(Math.random()*arr.length)];}}
+if (1 == 1 || undefined == choose) {function choose(arr) {if (arr.length==0) return 0; else return arr[Math.floor(Math.random()*arr.length)];}}
 
 
 var DungeonGen=function()
