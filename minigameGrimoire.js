@@ -1,5 +1,5 @@
 ﻿var M={};
-M.parent=Game.Objects['Wizard tower'];
+M.parent=Game.Objects['Wizard Tower'];
 M.parent.minigame=M;
 M.launch=function()
 {
@@ -35,7 +35,7 @@ M.launch=function()
 				},
 			},
 			'hand of fate':{
-				name:loc("Force the Hand of Fate"),
+				name:loc("Force The Hand Of Fate"),
 				desc:loc("Summon a random golden cookie. Each existing golden cookie makes this spell +%1% more likely to backfire.",15),
 				failDesc:loc("Summon an unlucky wrath cookie."),
 				icon:[22,11],
