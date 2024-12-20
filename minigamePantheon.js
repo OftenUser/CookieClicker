@@ -11,7 +11,7 @@ M.launch=function()
 		
 		M.gods={
 			'asceticism':{
-				name:'Holobore, Spirit of Asceticism',
+				name:'Holobore, Spirit Of Asceticism',
 				icon:[21,18],
 				desc1:'<span class="green">'+loc("+%1% base CpS.",15)+'</span>',
 				desc2:'<span class="green">'+loc("+%1% base CpS.",10)+'</span>',
@@ -20,7 +20,7 @@ M.launch=function()
 				quote:'An immortal life spent focusing on the inner self, away from the distractions of material wealth.',
 			},
 			'decadence':{
-				name:'Vomitrax, Spirit of Decadence',
+				name:'Vomitrax, Spirit Of Decadence',
 				icon:[22,18],
 				desc1:'<span class="green">'+loc("Golden and wrath cookie effect duration +%1%.",7)+'</span> <span class="red">'+loc("Buildings grant -%1% CpS.",7)+'</span>',
 				desc2:'<span class="green">'+loc("Golden and wrath cookie effect duration +%1%.",5)+'</span> <span class="red">'+loc("Buildings grant -%1% CpS.",5)+'</span>',
@@ -28,7 +28,7 @@ M.launch=function()
 				quote:'This sleazy spirit revels in the lust for quick easy gain and contempt for the value of steady work.',
 			},
 			'ruin':{
-				name:'Godzamok, Spirit of Ruin',
+				name:'Godzamok, Spirit Of Ruin',
 				icon:[23,18],
 				descBefore:'<span class="green">'+loc("Selling buildings triggers a buff boosted by how many buildings were sold.")+'</span>',
 				desc1:'<span class="green">'+loc("Buff boosts clicks by +%1% for every building sold for %2 seconds.",[1,10])+'</span>',
@@ -37,7 +37,7 @@ M.launch=function()
 				quote:'The embodiment of natural disasters. An impenetrable motive drives the devastation caused by this spirit.',
 			},
 			'ages':{
-				name:'Cyclius, Spirit of Ages',
+				name:'Cyclius, Spirit Of Ages',
 				icon:[24,18],
 				activeDescFunc:function()
 				{
@@ -55,7 +55,7 @@ M.launch=function()
 				quote:'This spirit knows about everything you\'ll ever do, and enjoys dispensing a harsh judgment.',
 			},
 			'seasons':{
-				name:'Selebrak, Spirit of Festivities',
+				name:'Selebrak, Spirit Of Festivities',
 				icon:[25,18],
 				descBefore:'<span class="green">'+loc("Some seasonal effects are boosted.")+'</span>',
 				desc1:'<span class="green">'+loc("Large boost.")+'</span> <span class="red">'+loc("Switching seasons is %1% pricier.",100)+'</span>',
@@ -64,7 +64,7 @@ M.launch=function()
 				quote:'This is the spirit of merry getaways and regretful Monday mornings.',
 			},
 			'creation':{
-				name:'Dotjeiess, Spirit of Creation',
+				name:'Dotjeiess, Spirit Of Creation',
 				icon:[26,18],
 				desc1:'<span class="green">'+loc("All buildings are <b>%1% cheaper</b>.",7)+'</span> <span class="red">'+loc("Heavenly chips have %1% less effect.",30)+'</span>',
 				desc2:'<span class="green">'+loc("All buildings are <b>%1% cheaper</b>.",5)+'</span> <span class="red">'+loc("Heavenly chips have %1% less effect.",20)+'</span>',
@@ -72,7 +72,7 @@ M.launch=function()
 				quote:'All things that be and ever will be were scripted long ago by this spirit\'s inscrutable tendrils.',
 			},
 			'labor':{
-				name:'Muridal, Spirit of Labor',
+				name:'Muridal, Spirit Of Labor',
 				icon:[27,18],
 				desc1:'<span class="green">'+loc("Clicking is <b>%1%</b> more powerful.",15)+'</span> <span class="red">'+loc("Buildings produce %1% less.",3)+'</span>',
 				desc2:'<span class="green">'+loc("Clicking is <b>%1%</b> more powerful.",10)+'</span> <span class="red">'+loc("Buildings produce %1% less.",2)+'</span>',
@@ -80,7 +80,7 @@ M.launch=function()
 				quote:'This spirit enjoys a good cheese after a day of hard work.',
 			},
 			'industry':{
-				name:'Jeremy, Spirit of Industry',
+				name:'Jeremy, Spirit Of Industry',
 				icon:[28,18],
 				desc1:'<span class="green">'+loc("Buildings produce %1% more.",10)+'</span> <span class="red">'+loc("Golden and wrath cookies appear %1% less.",10)+'</span>',
 				desc2:'<span class="green">'+loc("Buildings produce %1% more.",6)+'</span> <span class="red">'+loc("Golden and wrath cookies appear %1% less.",6)+'</span>',
@@ -96,7 +96,7 @@ M.launch=function()
 				quote:'A caring spirit said to contain itself, inwards infinitely.',
 			},
 			'scorn':{
-				name:'Skruuia, Spirit of Scorn',
+				name:'Skruuia, Spirit Of Scorn',
 				icon:[21,19],
 				descBefore:'<span class="red">'+loc("All golden cookies are wrath cookies with a greater chance of a negative effect.")+'</span>',
 				desc1:'<span class="green">'+loc("Wrinklers appear %1% faster and digest %2% more cookies.",[150,15])+'</span>',
@@ -105,7 +105,7 @@ M.launch=function()
 				quote:'This spirit enjoys poking foul beasts and watching them squirm, but has no love for its own family.',
 			},
 			'order':{
-				name:'Rigidel, Spirit of Order',
+				name:'Rigidel, Spirit Of Order',
 				icon:[22,19],
 				activeDescFunc:function()
 				{
