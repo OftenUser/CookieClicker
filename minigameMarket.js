@@ -40,7 +40,7 @@ M.launch=function()
 				company:'Hazel Monastery',
 				desc:'Hidden between hills and fog somewhere, the secretive <b>Hazel Monastery</b> has, for centuries, maintained nut crops of the highest quality. The monastery nuts are carefully tended to, harvested and shelled by its monks, who are all required to take a vow of nut allergy as a lifelong test of piety.',
 			},
-			'Wizard tower':{
+			'Wizard Tower':{
 				name:'Salt',
 				symbol:'SLT',
 				company:'Wacky Reagants',
@@ -52,7 +52,7 @@ M.launch=function()
 				company:'Cosmic Exports',
 				desc:'After the news broke of vanilla not being native to Earth, <b>Cosmic Exports</b> was the first company to discover its true origin planet - and has struck an exclusive deal with its tentacled inhabitants to ship its valuable, unadulterated beans all over the local quadrant.',
 			},
-			'Alchemy lab':{
+			'Alchemy Lab':{
 				name:'Eggs',
 				symbol:'EGG',
 				company:'Organic Gnostics',
@@ -64,20 +64,20 @@ M.launch=function()
 				company:'Dimensional Exchange',
 				desc:'The <b>Dimensional Exchange</b> employs a vast team of ragtag daredevils to dive into dangerous underworlds in search of strange native spices. Chief among those is cinnamon, a powder so delicious its true nature can only be unspeakably abominable.',
 			},
-			'Time machine':{
+			'Time Machine':{
 				name:'Cream',
 				symbol:'CRM',
 				company:'Precision Aging',
 				desc:'Once specialized in cosmetics for the elderly, the eggheads at <b>Precision Aging</b> have repurposed their timeshift technology and developed a process allowing them to accelerate, slow down, and even reverse the various phase changes of milk. Their flagship offering, whole cream, is said to be within 0.002% of theoretical ripening optimums.',
 			},
-			'Antimatter condenser':{
+			'Antimatter Condenser':{
 				name:'Jam',
 				symbol:'JAM',
 				company:'Pectin Research',
 				desc:'<b>Pectin Research</b> is a military-backed laboratory initially created with the aim of enhancing and miniaturizing army rations, but now open for public bulk trading. It has recently made forays in the field of highly-concentrated fruit jams, available in a variety of flavors.',
 			},
 			'Prism':{
-				name:'White chocolate',
+				name:'White Chocolate',
 				symbol:'WCH',
 				company:'Dazzle Corp Ltd.',
 				desc:'What was once two college kids messing around with mirrors in their dad\'s garage is now a world-famous megacorporation. <b>Dazzle Corp</b>\'s groundbreaking experiments in photonic annealing have led to the creation years ago of a new kind of matter, once derided as impossible by physicists and cooks alike: white chocolate.',
@@ -88,13 +88,13 @@ M.launch=function()
 				company:'Prosperity Hive',
 				desc:'The folks at <b>Prosperity Hive</b> deal in honey, and it\'s always worked for them. With a work culture so relaxed you\'re almost tempted to ditch the cookie business and join them, these people have little in common with the proverbial busy bee - though their rates do sting quite a bit.',
 			},
-			'Fractal engine':{
+			'Fractal Engine':{
 				name:'Cookies',
 				symbol:'CKI',
 				company:'Selfmade Bakeries',
 				desc:'Interesting. It appears there\'s still a company out there trying to sell cookies even with your stranglehold on the market. No matter - you figure <b>Selfmade Bakeries</b>\' largely inferior product will make decent fodder for the mouse traps in your factories.',
 			},
-			'Javascript console':{
+			'JavaScript Console':{
 				name:'Recipes',
 				symbol:'RCP',
 				company:'Figments Associated',
@@ -106,7 +106,7 @@ M.launch=function()
 				company:'Polyvalent Acquisitions',
 				desc:'Avoid the uncouth nastiness of mass layoffs and hostile takeovers by delegating the purchase, management, and eventual dissolution of other companies to the boys at <b>Polyvalent Acquisitions</b>. Let \'em deal with it!',
 			},
-			'Cortex baker':{
+			'Cortex Baker':{
 				name:'Publicists',
 				symbol:'PBL',
 				company:'Great Minds',
@@ -289,12 +289,12 @@ M.launch=function()
 		
 		M.officeLevel=0;
 		M.offices=[
-			{name:loc("Credit garage"),icon:[0,33],cost:[100,2],desc:EN?"This is your starting office.":loc("This is your office.")+'<br>'+loc("Upgrading will grant you:")+'<br><b><!--&bull; '+loc("+1 opportunity slot")+'<br>-->&bull; '+loc("+%1 warehouse space for all goods",25)+'</b>'},
-			{name:loc("Tiny bank"),icon:[9,33],cost:[200,4],desc:loc("This is your office.")+'<br>'+loc("Upgrading will grant you:")+'<br><b>&bull; '+loc("+1 loan slot")+'<br>&bull; '+loc("+%1 warehouse space for all goods",50)+'</b>'},
-			{name:loc("Loaning company"),icon:[10,33],cost:[350,8],desc:loc("This is your office.")+'<br>'+loc("Upgrading will grant you:")+'<br><!--<b>&bull; '+loc("+1 opportunity slot")+'<br>-->&bull; '+loc("+%1 warehouse space for all goods",75)+'</b>'},
-			{name:loc("Finance headquarters"),icon:[11,33],cost:[500,10],desc:loc("This is your office.")+'<br>'+loc("Upgrading will grant you:")+'<br><b>&bull; '+loc("+1 loan slot")+'<br>&bull; '+loc("+%1 warehouse space for all goods",100)+'</b>'},
-			{name:loc("International exchange"),icon:[12,33],cost:[700,12],desc:loc("This is your office.")+'<br>'+loc("Upgrading will grant you:")+'<br><b>&bull; '+loc("+1 loan slot")+'<br><!--&bull; '+loc("+1 opportunity slot")+'<br>-->&bull; '+loc("+%1% base warehouse space for all goods",50)+'</b>'},
-			{name:loc("Palace of Greed"),icon:[18,33],cost:0,desc:loc("This is your office.")+'<br>'+loc("It is fully upgraded. Its lavish interiors, spanning across innumerable floors, are host to many a decadent party, owing to your nigh-unfathomable wealth.")},
+			{name:loc("Credit Garage"),icon:[0,33],cost:[100,2],desc:EN?"This is your starting office.":loc("This is your office.")+'<br>'+loc("Upgrading will grant you:")+'<br><b><!--&bull; '+loc("+1 opportunity slot")+'<br>-->&bull; '+loc("+%1 warehouse space for all goods",25)+'</b>'},
+			{name:loc("Tiny Bank"),icon:[9,33],cost:[200,4],desc:loc("This is your office.")+'<br>'+loc("Upgrading will grant you:")+'<br><b>&bull; '+loc("+1 loan slot")+'<br>&bull; '+loc("+%1 warehouse space for all goods",50)+'</b>'},
+			{name:loc("Loaning Company"),icon:[10,33],cost:[350,8],desc:loc("This is your office.")+'<br>'+loc("Upgrading will grant you:")+'<br><!--<b>&bull; '+loc("+1 opportunity slot")+'<br>-->&bull; '+loc("+%1 warehouse space for all goods",75)+'</b>'},
+			{name:loc("Finance Headquarters"),icon:[11,33],cost:[500,10],desc:loc("This is your office.")+'<br>'+loc("Upgrading will grant you:")+'<br><b>&bull; '+loc("+1 loan slot")+'<br>&bull; '+loc("+%1 warehouse space for all goods",100)+'</b>'},
+			{name:loc("International Exchange"),icon:[12,33],cost:[700,12],desc:loc("This is your office.")+'<br>'+loc("Upgrading will grant you:")+'<br><b>&bull; '+loc("+1 loan slot")+'<br><!--&bull; '+loc("+1 opportunity slot")+'<br>-->&bull; '+loc("+%1% base warehouse space for all goods",50)+'</b>'},
+			{name:loc("Palace Of Greed"),icon:[18,33],cost:0,desc:loc("This is your office.")+'<br>'+loc("It is fully upgraded. Its lavish interiors, spanning across innumerable floors, are host to many a decadent party, owing to your nigh-unfathomable wealth.")},
 		];
 		
 		M.officeTooltip=function()
