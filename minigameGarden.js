@@ -21,7 +21,7 @@ M.launch=function()
 		*/
 		M.plants={
 			'bakerWheat':{
-				name:'Baker\'s wheat',
+				name:'Baker\'s Wheat',
 				icon:0,
 				cost:1,
 				costM:30,
@@ -73,7 +73,7 @@ M.launch=function()
 				q:'An ancient staple crop, famed for its golden sheen. Was once used to bake birthday cakes for kings and queens of old.',
 			},
 			'clover':{
-				name:'Ordinary clover',
+				name:'Ordinary Clover',
 				icon:4,
 				cost:25,
 				costM:77777,
@@ -85,7 +85,7 @@ M.launch=function()
 				q:'<i>Trifolium repens</i>, a fairly mundane variety of clover with a tendency to produce four leaves. Such instances are considered lucky by some.',
 			},
 			'goldenClover':{
-				name:'Golden clover',
+				name:'Golden Clover',
 				icon:5,
 				cost:125,
 				costM:777777777777,
@@ -178,7 +178,7 @@ M.launch=function()
 				},
 			},
 			'whiteChocoroot':{
-				name:'White chocoroot',
+				name:'White Chocoroot',
 				icon:10,
 				cost:15,
 				costM:100000,
@@ -204,7 +204,7 @@ M.launch=function()
 			},
 			
 			'whiteMildew':{
-				name:'White mildew',
+				name:'White Mildew',
 				fungus:true,
 				icon:26,
 				cost:20,
@@ -218,7 +218,7 @@ M.launch=function()
 				q:'A common rot that infests shady plots of earth. Grows in little creamy capsules. Smells sweet, but sadly wilts quickly.',
 			},
 			'brownMold':{
-				name:'Brown mold',
+				name:'Brown Mold',
 				fungus:true,
 				icon:27,
 				cost:20,
@@ -354,7 +354,7 @@ M.launch=function()
 				},
 			},
 			'queenbeetLump':{
-				name:'Juicy queenbeet',
+				name:'Juicy Queenbeet',
 				icon:18,
 				plantable:false,
 				cost:60*2,
@@ -478,7 +478,7 @@ M.launch=function()
 				q:'Small, tough, and good in omelettes. Some historians propose that the heads of dried cheapcaps were once used as currency in some bronze age societies.',
 			},
 			'foolBolete':{
-				name:'Fool\'s bolete',
+				name:'Fool\'s Bolete',
 				fungus:true,
 				icon:23,
 				cost:15,
@@ -504,7 +504,7 @@ M.launch=function()
 				q:'This mushroom\'s odor resembles that of a well-done steak, and is said to whet the appetite - making one\'s stomach start gurgling within seconds.',
 			},
 			'greenRot':{
-				name:'Green rot',
+				name:'Green Rot',
 				fungus:true,
 				icon:28,
 				cost:60,
@@ -916,7 +916,7 @@ M.launch=function()
 				q:loc("Dry soil made of small rocks tightly packed together. Not very conducive to plant health, but whatever falls off your crops will be easy to retrieve.<br>Useful if you're one of those farmers who just want to find new seeds without having to tend their garden too much."),
 			},
 			'woodchips':{
-				name:loc("Wood chips"),
+				name:loc("Wood Chips"),
 				icon:4,
 				tick:5,
 				effMult:0.25,
@@ -931,7 +931,7 @@ M.launch=function()
 		
 		M.tools={
 			'info':{
-				name:loc("Garden information"),
+				name:loc("Garden Information"),
 				icon:3,
 				desc:'-',
 				descFunc:function()
@@ -984,7 +984,7 @@ M.launch=function()
 				func:function(){},
 			},
 			'harvestAll':{
-				name:loc("Harvest all"),
+				name:loc("Harvest All"),
 				icon:0,
 				descFunc:function(){return loc("Instantly harvest all plants in your garden.")+'<div class="line"></div>'+((EN && Game.keys[16] && Game.keys[17])?'<b>You are holding shift+ctrl.</b> Only mature, mortal plants will be harvested.':loc("%1 to harvest only mature, mortal plants.",loc("Shift")+'+'+loc("Ctrl")+'+'+loc("Click")));},
 				func:function(){
@@ -1043,7 +1043,7 @@ M.launch=function()
 				isOn:function(){if (M.freeze){l('gardenContent').classList.add('gardenFrozen');}else{l('gardenContent').classList.remove('gardenFrozen');}return M.freeze;},
 			},
 			'convert':{
-				name:loc("Sacrifice garden"),
+				name:loc("Sacrifice Garden"),
 				icon:2,
 				desc:loc("A swarm of sugar hornets comes down on your garden, <span class=\"red\">destroying every plant as well as every seed you've unlocked</span> - leaving only a %1 seed.<br>In exchange, they will grant you <span class=\"green\">%2</span>.<br>This action is only available with a complete seed log.",[loc("Baker's wheat"),loc("%1 sugar lump",LBeautify(10))]),
 				func:function(){PlaySound('snd/toneTick.mp3');M.askConvert();},
